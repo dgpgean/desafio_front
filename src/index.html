@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <main>
+        <div class="grid grid-cols-1 grid-rows-2 h-full pb-11 font-teste md:grid-cols-2 md:grid-rows-1  md:pb-0 md:items-center">
+
+            <div class="w-full mb-23 px-4 py-9 bg-back_mobile bg-no-repeat bg-contain row-span-1 flex flex-col md:h-screen md:bg-back_main md: md:pb-0 md:mb-0 md:items-center md:justify-center md:py-0 md:flex-row">
+
+                <div class="flex flex-col relative items-end mt-3 md:items-center md:gap-6 md:justify-center">
+
+                    <div class="bg-back_mobile_card bg-no-repeat bg-contain w-mobile_width h-mobile-heigth ml-16 md:order-2">
+                    </div>                    
+                    
+                    <div class="bg-front_mobile_card bg-no-repeat bg-contain w-mobile_width h-mobile-heigth absolute left-0 top-23 grid grid-rows-4 text-white p-6 md:right-0 md:relative md:top-auto md:order-1">
+                        <img src="" alt="" class="row-span-2">
+                        <div id="card-number" class="row-span-1 tracking-widest text-size_mobile ">
+                            0000 0000 0000 0000
+                        </div>
+                        <div class="flex mt-3 justify-between tracking-widest text-size_mobile2">
+                            <div id="name_user">
+                                JANE APPLESEED
+                            </div>
+                            <div class="validation">
+                                00/00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="px-6 mt-3 flex row-span-2 flex-col gap-4 max-w-lg">
+                <div>
+                    <label for="" class="label_default">CARDHOLDER NAME</label>
+                    <input type="text" id="input_name" class="input_default" placeholder="e.g.Jane Appleseed">
+                </div>
+                <div>
+                    <label for="" class="label_default">CARD NUMBER</label>
+                    <input type="text" class="input_default" placeholder="e.g. 1234 5678 9123 0000">
+                </div>
+                <div>
+                    <label for="" class="label_default">EXP. DATE (MM/YY) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CVC</label>
+                    <div class="grid grid-cols-4 gap-3">
+                        <input type="text" class="input_default col-span-1" placeholder="MM">
+                        <input type="text" class="input_default col-span-1" placeholder="YY">
+                        <input type="text" class="input_default col-span-2" placeholder="e.g 123">
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="w-full text-center bg-very-dark-violet text-white p-4 rounded-xl">Confirm</button>
+                </div>
+            </form> 
+        </div>
+    </main>
+</body>
+</html>
+
+<script>
+    let n1 = document.querySelector('#name_user')
+    let n2 = document.querySelector('#input_name')
+    n2.addEventListener('keyup',()=>{
+      n1.innerHTML = n2.value
+    })
+
+</script>

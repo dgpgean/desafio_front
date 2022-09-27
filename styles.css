@@ -1,0 +1,15 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer components{
+
+    .input_default {
+        @apply flex-1 mb-2 md:mb-3 p-3 rounded-lg w-full border border-x-light-violet  md:bg-white text-sm md:text-base placeholder-gray-600 md:placeholder-gray-500 text-size_mobile placeholder-opacity-25;
+    }
+    .label_default{
+        @apply text-sm text-very-dark-violet block mb-2 tracking-widest
+    }
+}
